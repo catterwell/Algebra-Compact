@@ -15,11 +15,15 @@
 \usepackage{graphicx}
 \graphicspath{{pics/}}
 
-\geometry{a4paper, left=5mm, right=5mm, top=2mm, bottom=5mm}
+\geometry{a4paper, left=5mm, right=5mm, top=5mm, bottom=5mm}
 
 \begin{document}
 
 \begin{multicols}{3}
+    \setlength{\premulticols}{1pt}
+    \setlength{\postmulticols}{1pt}
+    \setlength{\multicolsep}{1pt}
+    \setlength{\columnsep}{1pt}
 
     \section{Vector Spaces}
 
@@ -1952,8 +1956,8 @@
         \emph{Structure} & \emph{Addition} & \emph{Multiplication} \\
         \midrule
         Field                      & Abelian Group   & Abelian Group \\
+        Division Ring              & Abelian Group   & Non-Abelian Group \\
         Ring                       & Abelian Group   & Monoid \\
-        Division Ring              & Abelian Group   & Non-Abelian Monoid \\
         \bottomrule
     \end{tabular}
 
